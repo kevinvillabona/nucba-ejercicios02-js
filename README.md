@@ -25,7 +25,6 @@
 >- A cada Pizza, agregarle una imagen. 
 >- Guardar el array en el local storage. 
 >- Crear un archivo HTML que contenga un card en donde se renderice el nombre, imagen, ingredientes y precio de una pizza (Estilizarlo con CSS). 
->- Debajo del card tiene que haber un input y un botón. 
 >- Deberemos colocar un numero en el input y, al apretar el botón, deberá renderizar en el card la pizza cuyo id coincida con el numero ingresado en el input. Si no coincide con ningún id, renderizar un mensaje de error.
 
 #### E4: Asincronismo + API'S 
