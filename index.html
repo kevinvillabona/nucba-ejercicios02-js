@@ -124,28 +124,48 @@
       ];
 
       const cardsContainer = document.getElementById("cardsContainer");
-      ejercicios.forEach((ejercicio) => {
-        const card = document.createElement("a");
-        card.classList.add("card");
-        card.href = ejercicio.link;
-        card.target = '_blank';
 
-        const image = document.createElement("img");
-        image.src = "img/" + ejercicio.image;
-        image.classList.add("image");
-        card.appendChild(image);
+      //-------------------CON FOR EACH-------------------
+      // ejercicios.forEach((ejercicio) => {
+      //   const card = document.createElement("a");
+      //   card.classList.add("card");
+      //   card.href = ejercicio.link;
+      //   card.target = '_blank';
 
-        const container = document.createElement("div");
-        container.classList.add("container");
-        card.appendChild(container);
+      //   const image = document.createElement("img");
+      //   image.src = "img/" + ejercicio.image;
+      //   image.classList.add("image");
+      //   card.appendChild(image);
 
-        const title = document.createElement("h2");
-        title.classList.add("title");
-        title.innerText = ejercicio.title;
-        container.appendChild(title);
+      //   const container = document.createElement("div");
+      //   container.classList.add("container");
+      //   card.appendChild(container);
 
-        cardsContainer.appendChild(card);
-      });
+      //   const title = document.createElement("h2");
+      //   title.classList.add("title");
+      //   title.innerText = ejercicio.title;
+      //   container.appendChild(title);
+
+      //   cardsContainer.appendChild(card);
+      // });
+
+      //-------------------CON MAP-------------------
+      const renderCard = ejercicio =>{
+        const {title, link, image} = ejercicio;
+        return `
+        <a class="card" href="${link}" target="_blank">
+          <img src="img/${image}" class="image">
+          <div class="container">
+            <h2 class="title">${title}</h2>
+            </div>
+        </a>
+        `;
+      }
+      const renderDiv = ejercicios =>{
+        cardsContainer.innerHTML = ejercicios.map(renderCard).join('');
+      }
+      
+      renderDiv(ejercicios);
     </script>
   </body>
 </html>
