@@ -36,8 +36,11 @@
 >- Con el número que se ponga, hacer una llamada a la pokeapi y renderizar una card con los datos del Pokémon encontrado. Lo mínimo que deberá tener la card es el nombre, su tipo principal (pueden intentar poner todos) , su altura y peso (expresada en metros y kilogramos, tendrán que dividir el alto y peso que les llegue por 10), y una de sus imágenes.
 >- En caso de que no se encuentre ningún pokemon, renderizar un mensaje de error. En caso de que no se ingrese un número, renderizar otro mensaje de error acorde.
 
-#### Weather App | Open Weather API - JavaScript [Live Demo](https://nucba-weather-app.vercel.app)
->Desafío correspondiente a la clase 1.19 del módulo 02 de JavaScript en el que se consume la API [Open Weather](https://openweathermap.org/) para crear una aplicación web sencilla.
+#### Weather App | Open Weather API | [Live Demo](https://nucba-weather-app.vercel.app)
+> Solución al desafío correspondiente a la clase 1.19 del módulo 02 de JavaScript. El objetivo del desafío es consumir la API [Open Weather](https://openweathermap.org/) para crear una aplicación web que muestre el clima en la ciudad solicitada.
 
-#### E5: NucbaZappi 
-[Link al repo](https://github.com/kevinvillabona)
+#### Pokedex | PokeAPI | [Live Demo](https://nucba-pokeapi-js.vercel.app/)
+> Solución al desafío correspondiente a la clase 1.20 del módulo 02 de JavaScript. El objetivo del desafío es consumir la API [PokeApi](https://pokeapi.co/docs/v2) para crear una aplicación web que muestre un listado completo de los Pokémon.
+
+
+#### E5: NucbaZappi | [Live Demo](https://github.com/kevinvillabona)
