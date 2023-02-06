@@ -29,7 +29,7 @@
 >- Debajo del card tiene que haber un input y un botón. 
 >- Deberemos colocar un numero en el input y, al apretar el botón, deberá renderizar en el card la pizza cuyo id coincida con el numero ingresado en el input. Si no coincide con ningún id, renderizar un mensaje de error.
 
-#### E4: Asincronismo + API'S | [Live Demo](https://github.com/kevinvillabona)
+#### E4: Asincronismo + API'S | [Live Demo](https://nucba-ejercicios02-js.vercel.app/E4/Ejercicio4.html)
 > Para esta entrega vamos a trabajar con asincronismo utilizando la API [PokeAPI](https://pokeapi.co/). Realizar:
 >
 >- Crear un input de tipo number y un botón tal como hicimos en las entregas anteriores.
