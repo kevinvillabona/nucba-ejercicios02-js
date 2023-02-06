@@ -5,13 +5,16 @@ const input = document.querySelector(".input");
 
 const renderPokemon = (pokemon) => {
     const { id, name, sprites, height, weight, types } = pokemon;
-    const bgColor = (types.length) > 1 ? 
-    `${types[1].type.name}` 
+    const bgColor = (types.length) > 1 
+    ? `${types[1].type.name}` 
     : `${types[0].type.name}` ;
+    const sprite = !(sprites.other.home.front_default) 
+    ? `${sprites.other["official-artwork"].front_default}`
+    : `${sprites.other.home.front_default}`
     return `
     <div class="poke" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0), var(--${bgColor})), url(assets/img/bg/Type_Background_${types[0].type.name}.webp)">
     <p class="id-poke">#${id}</p>
-    <img src="${sprites.other.home.front_default}" alt="${name}" />
+    <img src="${sprite}" alt="${name}" />
             <h2>${name.replace(/\b\w/g, l => l.toUpperCase())}</h2>
             <span class="exp">EXP. BASE: ${pokemon.base_experience}</span>
             <div class="poke-card"></div>
@@ -45,6 +48,7 @@ const fetchPokemon = async (id) => {
     try {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
         const data = await res.json();
+        console.log(data)
         return data;
     }
     catch {
