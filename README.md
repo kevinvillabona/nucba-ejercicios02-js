@@ -49,5 +49,3 @@
 #### Pokedex | PokeAPI | [`Live Demo`](https://nucba-pokeapi-js.vercel.app/)
 > Solución al desafío correspondiente a la clase 1.20 del módulo 02 de JavaScript. El objetivo del desafío es consumir la API [PokeApi](https://pokeapi.co/docs/v2) para crear una aplicación web que muestre un listado completo de los Pokémon.
 
-
-#### E5: NucbaZappi | [`Live Demo`](https://github.com/kevinvillabona)
