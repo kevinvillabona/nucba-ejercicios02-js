@@ -1,5 +1,12 @@
 # [NUCBA](https://nucba.io/codingbootcamp) | Ejercicios Módulo 02 - JavaScript
-### [DEMO Ejercicios Index](https://nucba-ejercicios02-js.vercel.app/)
+
+<p align="center">
+  <h3 align="center"><a href="https://nucba-ejercicios02-js.vercel.app/">DEMO Ejercicios Index</a></h3>
+</p>
+<p align="center">
+  <img align="center" alt="card" src="https://github.com/kevinvillabona/NUCBA-Ejercicios02-JS/blob/main/img/card02.png" />
+</p>
+
 #### E1: Array de Objetos, Bucles, Métodos | [Live Demo](https://github.com/kevinvillabona/NUCBA-Ejercicios02-JS/tree/main/E1)
 > Crear el array de objetos "Pizzas".
 >- Debemos crear 6 objetos como mínimo. Cada objeto debe tener definido su id (1,2,3,etc), nombre, ingredientes (Sobre la base) y precio. 
